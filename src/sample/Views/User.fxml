@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane fx:id="login" stylesheets="/sample/Styles/main.css" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.LoginController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="144.0" minWidth="10.0" prefWidth="60.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="437.0" minWidth="10.0" prefWidth="420.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="239.0" minWidth="10.0" prefWidth="60.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="105.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="200.0" minHeight="10.0" prefHeight="90.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="187.0" minHeight="10.0" prefHeight="90.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="150.0" minHeight="10.0" prefHeight="150.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <TextField fx:id="insertLogin" maxWidth="1.7976931348623157E308" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <TextField fx:id="insertPassword" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <Button fx:id="loginUser" contentDisplay="CENTER" maxWidth="-Infinity" mnemonicParsing="false" text="ZALOGUJ" GridPane.columnIndex="1" GridPane.rowIndex="3">
+         <GridPane.margin>
+            <Insets left="150.0" />
+         </GridPane.margin>
+         <padding>
+            <Insets bottom="5.0" left="40.0" right="40.0" top="5.0" />
+         </padding>
+      </Button>
+      <Label alignment="CENTER" text="Login :" GridPane.rowIndex="1">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <GridPane.margin>
+            <Insets left="20.0" />
+         </GridPane.margin>
+      </Label>
+      <Label text="Hasło :" GridPane.rowIndex="2">
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</GridPane>

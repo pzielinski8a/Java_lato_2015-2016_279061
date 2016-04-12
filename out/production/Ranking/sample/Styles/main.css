@@ -1,0 +1,27 @@
+GridPane{
+    -fx-background-color: dimgrey;
+}
+
+Button{
+    -fx-background-color: orange;
+    -fx-border-radius: 0%;
+    -fx-font-weight: bold;
+}
+
+Button:hover{
+    -fx-opacity: 0.6;
+}
+
+Label{
+    -fx-font-weight: bold;
+}
+
+TextField, DatePicker{
+    -fx-background-color: lightgrey;
+    -fx-border-color: black;
+    -fx-opacity: 0.2;
+}
+
+TextField:focused, DatePicker:focused{
+    -fx-opacity: 1;
+}
